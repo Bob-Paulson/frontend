@@ -1,0 +1,9 @@
+	body{
+				font-family: 'Bad Script','PT Mono';
+				font-size: 20;
+				background: linear-gradient (45deg,white 0%, green 50%);
+				background: radial-gradient(at bottom right, white 0%, lightblue 50%);
+			}
+			table{
+				font-family: PT Mono;
+			}

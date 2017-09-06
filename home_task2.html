@@ -1,0 +1,145 @@
+﻿<!DOCTYPE htlml>
+<html>
+	<head>
+		<link href = "home_task2.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT Mono|Bad Script|VT323&amp;subset=cyrillic-ext" rel="stylesheet">
+		<style type="text/css">
+		
+		</style>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<p>Шановний учаснику конкурсу «Вчитель-новатор»!<br/>
+		Заповніть, будь ласка, реєстраційну анкету українською мовою.<br/>
+		Прохання надати повну відповідь на всі поставлені запитання.<br/>
+		Якщо ви подаєте декілька конкурсних робіт, будь ласка,<br/>
+		заповніть дану анкету для кожної конкурсної роботи окремо.<br/>
+		Дякуємо Вам за участь у конкурсі та бажаємо успіхів!</p>
+		<form name="questionnaire" method="POST" action="">
+				<table cellspacing="0" cellpadding="4">
+					<tr>
+						<td><label for="check1">1.Прiзвище</label></td> <!--почему сдесь список не нумеруется ???!! -->
+						<td><input type="text" id = "check1" name="family_name" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check2">2.Iм`я та по-батьковi</label></td>
+						<td><input type="text" id="check2" name="name_midlename" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check3">3.Назва конкурсної роботи</label></td>
+						<td><input type="text" id="check3" name="work_name" value="" required /></td>
+					</tr>
+					<tr>
+						<td>4.Номінація конкурсної роботи</td>
+						<td>
+							<select name = "nomination">
+								<option value = "Навчальний проект">Навчальний проект</option>
+								<option value = "Виховний проект">Виховний проект</option>
+								<option value = "Позашкільний проект">Позашкільний проект</option>
+								<option value = "Навчальний контент" selected="selected">Навчальний контент&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option> <!-- вот тут не пойму как выровнять ячейку с остальными = (( пришлось пробелов наклепать.совет ?-->
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="check5">5.Навчальна дисциплiна<br>(наприклад,бiологiя)</label></td>
+						<td><input type="text" id="check5" name="discipline" value="" required /></td>
+					</tr>
+					<tr>
+						<td>6.Чи була апробована Ваша робота?</label></td>
+						<td>
+							<input type ="radio" name = "approbation" value="yes" />Yes
+							<input type="radio" name="approbation" value="no" checked="checked" />No
+						</td>
+					</tr>
+					<tr>
+						<td><label for="check7">7.Якщо так, то на якому рівні?</label></td>
+						<td><input type="text" id="check7" name="level_approbation" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check8">8.Повна назва установи,де ви працюєте</label></td>
+						<td><input type="text" id="check8" name="organization" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check9">9.Ваша посада</label></td>
+						<td><input type="text" id="check9" name="your_position" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check10">10.Місто/населений пункт</label></td>
+						<td><input type="text" id="check10" value="" required /></td>
+					</tr>
+					<tr>
+						<td>11.Область</td>
+						<td>
+							<select>
+								<option value = "АР Крым">АР Крым</option>
+								<option value = "Винницкая">Винницкая </option>
+								<option value = "Волынская">Волынская </option>
+								<option value = "Днепропетровская"> Днепропетровская </option>
+								<option value = "Донецкая"> Донецкая </option>
+								<option value = "Житомирская"> Житомирская </option>
+								<option value = "Закарпатская"> Закарпатская </option>
+								<option value = "Запорожская"> Запорожская </option>
+								<option value = "Ивано-Франковская">Ивано-Франковская &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option><!--если добавляю слово "область" то ячейка <select> становится больше чем остальные = ((.совет? -->
+								<option value = "Киевская"> Киевская </option>
+								<option value = "Кировоградская"> Кировоградская </option>
+								<option value = "Луганская"> Луганская </option>
+								<option value = "Львовская"> Львовская </option>
+								<option value = "Николаевская"> Николаевская </option>
+								<option value = "Одесская"> Одесская </option> 
+								<option value = "Полтавская"> Полтавская </option>
+								<option value = "Ровенская"> Ровенская </option>
+								<option value = "Сумская"> Сумская </option>
+								<option value = "Тернопольская"> Тернопольская </option>
+								<option value = "Харьковская"> Харьковская </option>
+								<option value = "Херсонская"> Херсонская </option>
+								<option value = "Хмельницкая"> Хмельницкая </option>
+								<option value = "Черкасская"> Черкасская </option>
+								<option value = "Черниговская"> Черниговская </option>
+								<option value = "Черновицкая"> Черновицкая </option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="check12">12.Мобільний телефон</label></td>
+						<td><input type="number" id="check12" name="mobile_phone" value="" required /></td>
+					</tr>
+					<tr>
+						<td><label for="check13">13.Електронна пошта</label></td>
+						<td><input type="email" id="check13" name="email" value="" required /></td>
+					</tr>
+					<tr>
+						<td>14.Ви брали участь у попередніх <br/> конкурсах «Вчитель-новатор»?</td>
+						<td>
+							<input type="radio" name="ex_competition" value="yes"/>Yes
+							<input type="radio" name="ex_competition" value="no" checked="checked" />No
+						</td>
+					</tr>
+					<tr>
+						<td><label for="check15">15.Якщо так,  то вкажіть, коли саме.</label></td>
+						<td><input type="date" name="date_ex_competition" required /></td>
+					</tr>
+					<tr>
+						<td>Яким чином ви дізналися про конкурс «Вчитель-новатор»?<br/>(на вибір, можна декілька варіантів)</td>
+						<td>
+							<select multiple size="3">
+								<option value="Сайт МОН молодьспорту">Сайт МОН молодьспорту</option>
+								<option value="Сайт Майкрософт Україна">Сайт Майкрософт Україна</option>
+								<option value="Сайт Мережі «Партнерство в навчанні">Сайт Мережі «Партнерство в навчанні</option>
+								<option value="Обласний ІППО">Обласний ІППО</option>
+								<option value="Обласне управління освіти">Обласне управління освіти</option>
+								<option value="Міське управління освіти">Міське управління освіти</option>
+								<option value="Osvita.com">Osvita.com</option>
+								<option value="Gurt.org.ua">Gurt.org.ua</option>
+								<option value="Iнше">Iнше</option>
+							</select>
+					</tr>
+				</table>	
+		Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності
+						<input type="checkbox" name="agree" value="ok" required/><br/>
+						<input type="submit" value="Подати анкету" />
+						<input type="reset" value="Заповнити знову" />
+						
+		</form>
+		<hr>
+	</body>
+</html>
